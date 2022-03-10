@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>EXO 3 | TP 2 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Hello</h1>
+	<h2>Titre 1</h2>
+
+	<img id="img1" onclick="taille(event)" src="https://media.istockphoto.com/photos/the-main-attraction-of-paris-and-all-of-europe-is-the-eiffel-tower-in-picture-id1185953092?k=20&m=1185953092&s=612x612&w=0&h=KHs_E9GYlaacGx9lzvYwID7mopBmw7nN4jyr7b-Acqo=">
+	<img id="img2" onclick="taille(event)" src="http://images.math.cnrs.fr/IMG/png/section5-noisy.png">
+
+<script>
+	console.log('hello');
+	function taille(event) {
+		let img = event.target;
+		let image1 = document.getElementById('img1');
+		let image2 = document.getElementById('img2');
+		let imgselected;
+		let otherimage;
+		if (img == image1) {
+			imgselected = image1;
+			otherimage = image2;
+		} else {
+			imgselected = image2;
+			otherimage = image1;
+		}
+		let width = img.clientWidth * 1.2;
+		imgselected.style.width = (width) + "px";
+		width = otherimage.clientWidth * 0.8;
+		otherimage.style.width = (width) + "px";
+	}
+
+</script>
+</body>
+
+</html>
