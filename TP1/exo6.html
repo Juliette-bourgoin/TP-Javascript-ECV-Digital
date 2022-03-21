@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>EXO 6 | TP 1 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+	<ul>
+		<li>Toto</li>
+		<li id="second_li">Tata</li>
+		<li>Titi</li>
+		<li>Tutu</li>
+	</ul>
+
+<script>
+
+	const newLi = document.createElement('li');
+	const ul = document.getElementsByTagName('ul')[0];
+	newLi.innerHTML = "coucou";
+	const oldLi = document.getElementById('second_li');
+
+	ul.replaceChild(newLi, oldLi);
+
+</script>
+</body>
+
+</html>

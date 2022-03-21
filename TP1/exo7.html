@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>EXO 5 | TP 1 - JS - Juliette Bourgoin</title>
+  <title>EXO 7 | TP 1 - JS - Juliette Bourgoin</title>
 </head>
-  <body>
+  <body style="background-color:red;">
     <div class="head">
     <div id="nav">
       <div class="container clearfix">
@@ -416,10 +416,11 @@
   </div>
 
 		<script>
-			const elements = document.getElementsByTagName("p");
-			for (let i = 0; i < elements.length; i++) {
-        elements[i].remove();
-			}
+
+			const body = document.getElementsByTagName('body')[0];
+
+			console.log(body.offsetWidth, window.getComputedStyle(body).backgroundColor);
 		</script>
+
   </body>
 </html>
