@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+	<title>EXO 5 | TP 2 - JS - Juliette Bourgoin</title>
+	</head>
+	<body>
+
+		<img onmouseover="zoomin(this)" onmouseout="zoomout(this)" src="https://media.istockphoto.com/photos/the-main-attraction-of-paris-and-all-of-europe-is-the-eiffel-tower-in-picture-id1185953092?k=20&m=1185953092&s=612x612&w=0&h=KHs_E9GYlaacGx9lzvYwID7mopBmw7nN4jyr7b-Acqo=">
+		<img onmouseover="zoomin(this)" onmouseout="zoomout(this)" src="http://images.math.cnrs.fr/IMG/png/section5-noisy.png">
+		<img onmouseover="zoomin(this)" onmouseout="zoomout(this)" src="https://www.media.pokekalos.fr/img/pokemon/sprites/dp2/465.png">
+
+		<script>
+			function zoomin(element) {
+				const currHeight = element.clientHeight;
+				element.style.height = (currHeight * 3) + "px";
+			}
+
+			function zoomout(element) {
+				const currHeight = element.clientHeight;
+				element.style.height = (currHeight / 3) + "px";
+			}
+		</script>
+	</body>
+</html>

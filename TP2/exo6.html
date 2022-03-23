@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+	<title>EXO 6 | TP 2 - JS - Juliette Bourgoin</title>
+	</head>
+	<body>
+		<div class="head">
+		<div id="nav">
+		  <div class="container clearfix">
+			<div class="logo"><a href="https://www.fitcare.com/"><img src="/wp-content/themes/fitcareglobal.com/images/logo.png" alt="Shenzhen Fitcare Electronics Co.,Ltd."></a></div>
+			<div class='nav_lan'>
+			  <ul class="nav nav_en  clearfix">
+				<li class="nav-active" id="liHome"> <a href="https://www.fitcare.com/" class="inmenu_1">Home</a></li>
+				<li id="liproducts" ><a href="/heart-rate-monitor/" class="inmenu">Products</a>
+				  <ul class="submenu">
+					  <li class="cat-item cat-item-6"><a href="https://www.fitcare.com/heart-rate-monitor/" >Heart Rate Monitor</a>
+	  </li>
+	  <li class="cat-item cat-item-14"><a href="https://www.fitcare.com/cycling-devices/" >Cycling Devices</a>
+	  </li>
+	  <li class="cat-item cat-item-30"><a href="https://www.fitcare.com/group-training-system/" >Group Training System</a>
+	  </li>
+	  <li class="cat-item cat-item-24"><a href="https://www.fitcare.com/aerobic-devices/" >Aerobic Devices</a>
+	  </li>
+	  <li class="cat-item cat-item-36"><a href="https://www.fitcare.com/wellness-devices/" >Wellness Devices</a>
+	  </li>
+	  <li class="cat-item cat-item-44"><a href="https://www.fitcare.com/ant-dongle/" >ANT Dongle</a>
+	  </li>
+	  <li class="cat-item cat-item-1001"><a href="https://www.fitcare.com/accessories/" >Accessories</a>
+	  </li>
+				  </ul>
+				</li>
+				<li id="linewslist-1" ><a href="/news/" class="inmenu">News</a>
+				</li>
+
+				<li id="licontact-us"><a href="https://www.fitcare.com/contact-us/" class="inmenu">Contact Us</a></li>
+				<li id="lifeedback"><a href="https://www.fitcare.com/feedback/" class="inmenu">Feedback</a></li>
+				<li class="nav-list language" ><a href="javascript:void(0)">Language</a>
+					<ul class="submenu">
+						  <li class="lang-item lang-item-2 lang-item-en lang-item-first current-lang"><a lang="en-US" hreflang="en-US" href="https://www.fitcare.com/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/us.png' /><span style="margin-left:0.3em;">English</span></a></li>
+	  <li class="lang-item lang-item-50 lang-item-fr"><a lang="fr-BE" hreflang="fr-BE" href="https://www.fitcare.com/fr/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/be.png' /><span style="margin-left:0.3em;">Français</span></a></li>
+	  <li class="lang-item lang-item-54 lang-item-es"><a lang="es-AR" hreflang="es-AR" href="https://www.fitcare.com/es/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/ar.png' /><span style="margin-left:0.3em;">Español</span></a></li>
+	  <li class="lang-item lang-item-58 lang-item-de"><a lang="de-CH" hreflang="de-CH" href="https://www.fitcare.com/de/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/ch.png' /><span style="margin-left:0.3em;">Deutsch</span></a></li>
+	  <li class="lang-item lang-item-62 lang-item-it"><a lang="it-IT" hreflang="it-IT" href="https://www.fitcare.com/it/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/it.png' /><span style="margin-left:0.3em;">Italiano</span></a></li>
+	  <li class="lang-item lang-item-66 lang-item-ja"><a lang="ja" hreflang="ja" href="https://www.fitcare.com/ja/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/jp.png' /><span style="margin-left:0.3em;">日本語</span></a></li>
+	  <li class="lang-item lang-item-70 lang-item-ko"><a lang="ko-KR" hreflang="ko-KR" href="https://www.fitcare.com/ko/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/kr.png' /><span style="margin-left:0.3em;">한국어</span></a></li>
+	  <li class="lang-item lang-item-74 lang-item-ru"><a lang="ru-RU" hreflang="ru-RU" href="https://www.fitcare.com/ru/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/ru.png' /><span style="margin-left:0.3em;">Русский</span></a></li>
+	  <li class="lang-item lang-item-78 lang-item-pt"><a lang="pt-BR" hreflang="pt-BR" href="https://www.fitcare.com/pt/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/br.png' /><span style="margin-left:0.3em;">Português</span></a></li>
+	  <li class="lang-item lang-item-82 lang-item-nl"><a lang="nl-BE" hreflang="nl-BE" href="https://www.fitcare.com/nl/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/be.png' /><span style="margin-left:0.3em;">Nederlands</span></a></li>
+	  <li class="lang-item lang-item-86 lang-item-ar"><a lang="ar" hreflang="ar" href="https://www.fitcare.com/ar/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/arab.png' /><span style="margin-left:0.3em;">العربية</span></a></li>
+	  <li class="lang-item lang-item-389 lang-item-af"><a lang="af" hreflang="af" href="https://www.fitcare.com/af/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/za.png' /><span style="margin-left:0.3em;">Afrikaans</span></a></li>
+	  <li class="lang-item lang-item-393 lang-item-as"><a lang="as" hreflang="as" href="https://www.fitcare.com/as/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/in.png' /><span style="margin-left:0.3em;">অসমীয়া</span></a></li>
+	  <li class="lang-item lang-item-397 lang-item-az"><a lang="az" hreflang="az" href="https://www.fitcare.com/az/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/az.png' /><span style="margin-left:0.3em;">Azərbaycan</span></a></li>
+	  <li class="lang-item lang-item-401 lang-item-be"><a lang="be" hreflang="be" href="https://www.fitcare.com/be/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/by.png' /><span style="margin-left:0.3em;">Беларуская мова</span></a></li>
+	  <li class="lang-item lang-item-405 lang-item-bg"><a lang="bg-BG" hreflang="bg-BG" href="https://www.fitcare.com/bg/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/bg.png' /><span style="margin-left:0.3em;">български</span></a></li>
+	  <li class="lang-item lang-item-409 lang-item-bn"><a lang="bn-BD" hreflang="bn-BD" href="https://www.fitcare.com/bn/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/bd.png' /><span style="margin-left:0.3em;">বাংলা</span></a></li>
+	  <li class="lang-item lang-item-413 lang-item-bo"><a lang="bo" hreflang="bo" href="https://www.fitcare.com/bo/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/tibet.png' /><span style="margin-left:0.3em;">བོད་ཡིག</span></a></li>
+	  <li class="lang-item lang-item-417 lang-item-bs"><a lang="bs-BA" hreflang="bs-BA" href="https://www.fitcare.com/bs/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/ba.png' /><span style="margin-left:0.3em;">Bosanski</span></a></li>
+	  <li class="lang-item lang-item-421 lang-item-ca"><a lang="ca" hreflang="ca" href="https://www.fitcare.com/ca/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/catalonia.png' /><span style="margin-left:0.3em;">Català</span></a></li>
+	  <li class="lang-item lang-item-425 lang-item-vi"><a lang="vi" hreflang="vi" href="https://www.fitcare.com/vi/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/vn.png' /><span style="margin-left:0.3em;">Tiếng Việt</span></a></li>
+	  <li class="lang-item lang-item-429 lang-item-ceb"><a lang="ceb" hreflang="ceb" href="https://www.fitcare.com/ceb/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/ph.png' /><span style="margin-left:0.3em;">Cebuano</span></a></li>
+	  <li class="lang-item lang-item-433 lang-item-ku"><a lang="ckb" hreflang="ckb" href="https://www.fitcare.com/ku/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/kurdistan.png' /><span style="margin-left:0.3em;">کوردی</span></a></li>
+	  <li class="lang-item lang-item-437 lang-item-cs"><a lang="cs-CZ" hreflang="cs-CZ" href="https://www.fitcare.com/cs/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/cz.png' /><span style="margin-left:0.3em;">Čeština</span></a></li>
+	  <li class="lang-item lang-item-441 lang-item-cy"><a lang="cy" hreflang="cy" href="https://www.fitcare.com/cy/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/wales.png' /><span style="margin-left:0.3em;">Cymraeg</span></a></li>
+	  <li class="lang-item lang-item-445 lang-item-da"><a lang="da-DK" hreflang="da-DK" href="https://www.fitcare.com/da/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/dk.png' /><span style="margin-left:0.3em;">Dansk</span></a></li>
+	  <li class="lang-item lang-item-449 lang-item-dz"><a lang="dz" hreflang="dz" href="https://www.fitcare.com/dz/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/bt.png' /><span style="margin-left:0.3em;">རྫོང་ཁ</span></a></li>
+	  <li class="lang-item lang-item-453 lang-item-el"><a lang="el" hreflang="el" href="https://www.fitcare.com/el/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/gr.png' /><span style="margin-left:0.3em;">Ελληνικά</span></a></li>
+	  <li class="lang-item lang-item-457 lang-item-eo"><a lang="eo" hreflang="eo" href="https://www.fitcare.com/eo/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/esperanto.png' /><span style="margin-left:0.3em;">Esperanto</span></a></li>
+	  <li class="lang-item lang-item-461 lang-item-et"><a lang="et" hreflang="et" href="https://www.fitcare.com/et/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/ee.png' /><span style="margin-left:0.3em;">Eesti</span></a></li>
+	  <li class="lang-item lang-item-465 lang-item-eu"><a lang="eu" hreflang="eu" href="https://www.fitcare.com/eu/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/basque.png' /><span style="margin-left:0.3em;">Euskara</span></a></li>
+	  <li class="lang-item lang-item-469 lang-item-fur"><a lang="fur" hreflang="fur" href="https://www.fitcare.com/fur/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/it.png' /><span style="margin-left:0.3em;">Furlan</span></a></li>
+						<li class="lang-item lang-item-zh"><a lang="zh-CN" target="_blank" hreflang="zh-CN" href="http://www.fitcare.cn/"><img src='https://www.fitcare.com/wp-content/plugins/polylang/flags/cn.png' /><span style="margin-left:0.3em;">中文站</span></a></li>
+					</ul>
+				</li>
+				<li id="liabout-us"> <a href="https://www.fitcare.com/about-us/" class="inmenu">About Us</a></li>
+			  </ul>
+			</div>
+			<div class="mobile_login_menu"><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/nav.png" alt=""></div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="body">
+		<div class="swiper-container" id="banner">
+		  <div class="swiper-wrapper">
+			<div class="swiper-slide"><a href="https://www.fitcare.com/heart-rate-monitor/chest-strap-heart-rate-monitor/gym-training-heart-rate-monitor.html"><img width="100%"  src="https://www.fitcare.com/wp-content/uploads/2021082608235648.jpg" alt=""/></a></div><div class="swiper-slide"><a href="https://www.fitcare.com/cycling-devices/bike-computer/big-screen-light-weight-cycling-computer.html"><img width="100%"  src="https://www.fitcare.com/wp-content/uploads/2021082608234227.jpg" alt=""/></a></div><div class="swiper-slide"><a href="https://www.fitcare.com/cycling-devices/bike-computer/ant-gps-bicycle-computer.html"><img width="100%"  src="https://www.fitcare.com/wp-content/uploads/2021082608232638.jpg" alt=""/></a></div><div class="swiper-slide"><a href="https://www.fitcare.com/aerobic-devices/boxing-sensor/bluetooth-wearable-boxing-sensor.html"><img width="100%"  src="https://www.fitcare.com/wp-content/uploads/2021082609214994.jpg" alt=""/></a></div>      </div>
+		  <div class="swiper-pagination" id="bannerNav"></div>
+		  <div class="swiper-button-prev" id="bannerPrev"></div>
+		  <div class="swiper-button-next" id="bannerNext"></div>
+		</div>
+		<div class="about">
+		  <div class="container">
+			<div class="aboutus_abs clearfix">
+			  <div class="r">
+				<div class="rr"><img class="shadow" src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/011a1f8448265264.jpg">
+				</div>
+				<!-- <div class="rl"><img class="shadow" src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/0b969cbc5fa23251.jpg">
+				</div> -->
+			  </div>
+			  <div class="l">
+				<h2><span>About Us</span></h2>
+				<div class="t">Shenzhen Fitcare Electronics Co.,Ltd.</div>
+				<div class="c">
+				  <div>Shenzhen Fitcare Electronics was founded in Jan 2011. We keep working hard to make life better and healthier. We are experienced in fitness and healthcare industry, and we have an experienced and brilliant R&amp;D team, including firmware, hardware, IOS and Android design, cloud and server design.
+	  </div>
+				</div>
+				<div class="more"><a href="https://www.fitcare.com/about-us/">Contact Us </a></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="service">
+		  <div class="container">
+			<div class="team_index">
+			  <div class="t">
+				<h2><span>One Stop Service</span></h2>
+			  </div>
+			  <div class="c">
+				<p>Fitcare can help the clients with end-to-end services from product concept to mass production, no matter
+				  the customer is a start up or a leader in the industry. We would be more than happy to work with you to
+				  define the product together, and provide with the customized services including schemetics and PCB design,
+				  algorithm design, firmware development, and App/ cloud development. We understand how important the
+				  intellectual property for our customer so we provide with a secure and confidential work environment to
+				  protect that.</p>
+			  </div>
+			  <ul class="clearfix">
+				<li><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/team1.png">
+				  <p>35+ R&amp;D Engineer</p>
+				</li>
+				<li><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/team2.png">
+				  <p>High Efficiency Production</p>
+				</li>
+				<li><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/team3.png">
+				  <p>Professional Customer Service</p>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<div id="products">
+		  <div class="container">
+			<div class="t">
+			  <h2><span>Products Categories</span></h2>
+			</div>
+			<ul class="product-list clearfix">
+											<li>
+				<a href="https://www.fitcare.com/heart-rate-monitor/">
+				  <div><img src="https://www.fitcare.com/wp-content/uploads/2020112010460965.jpg" alt="Heart Rate Monitor"></div>
+				  <p>Heart Rate Monitor</p>
+				</a>
+			  </li>
+						<li>
+				<a href="https://www.fitcare.com/cycling-devices/">
+				  <div><img src="https://www.fitcare.com/wp-content/uploads/2020112010451198.jpg" alt="Cycling Devices"></div>
+				  <p>Cycling Devices</p>
+				</a>
+			  </li>
+						<li>
+				<a href="https://www.fitcare.com/group-training-system/">
+				  <div><img src="https://www.fitcare.com/wp-content/uploads/2020112010454236.jpg" alt="Group Training System"></div>
+				  <p>Group Training System</p>
+				</a>
+			  </li>
+						<li>
+				<a href="https://www.fitcare.com/aerobic-devices/">
+				  <div><img src="https://www.fitcare.com/wp-content/uploads/2020112010441747.jpg" alt="Aerobic Devices"></div>
+				  <p>Aerobic Devices</p>
+				</a>
+			  </li>
+						<li>
+				<a href="https://www.fitcare.com/wellness-devices/">
+				  <div><img src="https://www.fitcare.com/wp-content/uploads/2020112010463526.jpg" alt="Wellness Devices"></div>
+				  <p>Wellness Devices</p>
+				</a>
+			  </li>
+						<li>
+				<a href="https://www.fitcare.com/ant-dongle/">
+				  <div><img src="https://www.fitcare.com/wp-content/uploads/2020112010444499.jpg" alt="ANT Dongle"></div>
+				  <p>ANT Dongle</p>
+				</a>
+			  </li>
+								</ul>
+		  </div>
+		</div>
+		<ul class="innovation">
+		  <li>
+			<div class="container">
+			  <div class="innovate clearfix">
+				<div class="r">
+				  <div class="rt">
+					<h2><span>Innovation and Engineering</span></h2>
+				  </div>
+				  <div class="rc">
+					<div>Our talented R&amp;D team mainly focused in fitness and healthcare field and can bring the latest
+					  technologies to our customers. Our motivational management system encourages our team member to keep
+					  exploring in new technologies and we partnered with leading research institutions, universities and
+					  suppliers to keep learning from them.                  &nbsp;</div>
+					<div>From the earliest stages, customers engage our innovation platform to streamline product design and
+					  accelerate commercialization.                  </div>
+					<div>Our advanced design and engineering can help eliminate redundancies, shorten design life cycles,
+					  expedite product testing, and bypass bottlenecks. All in service of helping you get the best products
+					  to market first.                  </div>
+				  </div>
+				  <ul class="loopshow clearfix" for="innovateimg">
+					<li class="curr"><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i1.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i2.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i3.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i4.jpg">
+					  <div></div>
+					</li>
+
+				  </ul>
+				</div>
+				<div class="l"><img class="shadow" id="innovateimg" src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i1.jpg">
+				</div>
+			  </div>
+			</div>
+		  </li>
+		  <li>
+			<div class="container">
+			  <div class="innovate clearfix">
+				<div class="r">
+				  <div class="rt">
+					<h2><span>App Development and Support</span></h2>
+				  </div>
+				  <div class="rc">
+					<div>A good App is a powerful way to marketing the business. Our App team includes UI/UX designer, iOS
+					  developer, Android developer, and cloud developer. And they have developed Apps according to the
+					  customer’s requirements with high efficiency. Ranging from conventional smart devices for iPhones,
+					  iPads, Android devices and tablets to cross-platform apps, our App engineer will get our IoT devices
+					  seamlessly worked with all these Apps.                  &nbsp;</div>
+					<div>We are familiar with our own products，and as the technologies for the smart devices like Ble, ANT+, Zigbee, WiFi, we can provide with the SDK and support to the customer who develop their own Apps.                   &nbsp;</div>
+					<div>
+					  &nbsp;</div>
+				  </div>
+				  <ul class="loopshow clearfix">
+					<li class="curr"><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i6.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i7.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i8.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i9.jpg">
+					  <div></div>
+					</li>
+				  </ul>
+				</div>
+				<div class="l"><img class="shadow" id="productionimg" src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i6.jpg"></div>
+			  </div>
+			</div>
+		  </li>
+		  <li>
+			<div class="container">
+			  <div class="innovate clearfix">
+				<div class="r">
+				  <div class="rt">
+					<h2><span>Manufacturing</span></h2>
+				  </div>
+				  <div class="rc">
+					<div>Fitcare have shipped large amount of units to all around the world. We constantly integrate innovative
+					  technologies and improve our facilities and process with forward-thinking ideas to manufacture
+					  high-value added products and solutions for customers. And we always apply a strict industry standards
+					  to the products. We have ISO9001, BSCI, GSV certified and we understand that the importance focus is
+					  to keep continuous quality improvement.                  &nbsp;</div>
+					<div>Thanks to the support of our suppliers and customers, we will provide with more professional products
+					  to all the users.                  </div>
+				  </div>
+				  <ul class="loopshow clearfix" >
+					<li class="curr"><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i10.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i11.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i12.jpg">
+					  <div></div>
+					</li>
+					<li class=""><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i13.jpg">
+					  <div></div>
+					</li>
+				  </ul>
+				</div>
+				<div class="l"><img class="shadow" id="serverimg" src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/images/i10.jpg"></div>
+			  </div>
+			</div>
+		  </li>
+		</ul>
+		<div id="contact_us">
+		  <div class="container">
+			<div class="rt">
+			  <h2><span>Get in Touch</span></h2>
+			</div>
+			<ul class="contact_li clearfix">
+			  <li class="fl">
+				<div class="address">
+				  <p><strong>Shenzhen Fitcare Electronics Co.,Ltd.</strong></p>
+				  <p>TEL: +86-755 23729876</p>
+				  <p>E-mail: <a href="mailto:info@fitcare.cn"> info@fitcare.cn</a></p>
+				  <p>Add: 6th Floor(south), Building A, Dingxin Science Park, 67 District, Bao’an, Shenzhen, China</strong></p>
+				</div>
+			  </li>
+			  <li class="fr">
+				<div class="list_content">
+	  <form id="messageform" name="messageform" method="post">
+		<input name="istosave" type="hidden" id="istosave" value=true />
+		<input name="item" type="hidden" id="item" value="" />
+		<input name="fromurl" type="hidden"  id="fromurl" value="https://www.fitcare.com/" />
+		<p id="strmsg"></p>
+		<ul class="contact-input" id="contact-input">
+			<li>
+				<label><span>*</span>Your Name:</label>
+				<i><input type="text" name="username" id="username"></i>
+			</li>
+			<li>
+				<label><span>*</span>E-mail:</label>
+				<i><input type="text" name="email" id="email" placeholder="Please input your email here, it is very important!" maxlength="50"></i>
+			</li>
+			<li>
+				<label>Phone:</label>
+				<i><input type="text" name="tel" id="tel"></i>
+			</li>
+			<li>
+				<label><span>*</span>Content:</label>
+				<i><textarea name="content" id="content" class="atextarea" cols="50" rows="5" maxlength="2000" placeholder="Please include details like size, weight, destination port and ect., so that we can quote the best price."></textarea></i>
+			</li>
+			<li>
+				<label><span>*</span>Code</label>
+				<i><input name="hy_verify_code" type="text" id="hy_verify_code" placeholder="" value="" /></i>
+			</li>
+			<li>
+				<label><span style="color:rgba(0,0,0,0);">-</span></label>
+				<i>
+					<div>
+						<img id="verify-code" src="https://www.fitcare.com/verify" />
+						<br />
+						Please enter the characters one by one.                </div>
+				</i>
+
+			</li>
+		</ul>
+		<div class="Newsletter-btn"><input name="messagesubmit" id="messagesubmit" type="submit" class="form-control" value="Send" /></div>
+	  </form>
+				  <style type="text/css">
+					#messageform {margin:0;}
+					.contact-input li {margin-bottom: 9px;}
+					.list_content input, .list_content textarea{margin-bottom: 0;}
+					.Newsletter-btn{text-align: left;}
+				  </style>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+		<div class="foot">
+		<div class="container">
+		  <div class="copy_right clearfix">
+			<a href="/"><img src="/wp-content/themes/fitcareglobal.com/images/logo.png" class="bt-logo" alt="Shenzhen Fitcare Electronics Co.,Ltd."></a>
+			<ul class="social">
+				<li><a href="https://www.fitcare.com/">Home</a></li>
+				<li><a href="/products/">Products</a></li>
+				<li><a href="/news/">News</a></li>
+				<li><a href="https://www.fitcare.com/contact-us/">Contact Us</a></li>
+				<li><a href="https://www.fitcare.com/feedback/">Feedback</a></li>
+				<li><a href="https://www.fitcare.com/about-us/">About Us</a></li>
+			</ul>
+			<p>
+			  Copyright © Shenzhen Fitcare Electronics Co.,Ltd. All Rights Reserved.<span></span>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	  <link rel="stylesheet" href="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/serviceonline/img/style.css">
+	  <div class="main-im">
+		<div id="open_im" class="open-im">&nbsp;</div>
+		<div class="im_main" id="im_main">
+			<div id="close_im" class="close-im"><a href="javascript:void(0);" title="点击关闭">&nbsp;</a></div>
+			<a href="#" class="im-qq qq-a" title="online Service">
+				<div class="qq-container">
+					<i><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/serviceonline/img/qq-icon-bg.png"></i>
+				</div>
+				<span>Online Service</span>
+			</a>
+			<div class="im-tel">
+				<ul >
+					<li class="clearfix"><i><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/serviceonline/img/phone.png"></i><span>+86-755 23729876</span></li>
+					<li class="clearfix"><i><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/serviceonline/img/phone.png"></i><span>+8613480716862</span></li>
+					<li class="clearfix"><i><img src="https://www.fitcare.com/wp-content/themes/fitcareglobal.com/serviceonline/img/email.png"></i><span><a href="mailto:info@fitcare.cn">info@fitcare.cn</a></span></li>
+
+
+
+
+				</ul>
+			</div>
+			<div class="im-footer clearfix">
+				<div class="weixing-container">
+					<div class="weixing-show">
+						<div class="weixing-txt">QR code</div>
+											<div class="weixing-sanjiao"></div>
+						<div class="weixing-sanjiao-big"></div>
+					</div>
+				</div>
+				<div class="go-top"><a href="javascript:;" title="Top"></a> </div>
+			</div>
+		</div>
+
+		</div>
+		<script>
+
+			const all = document.getElementsByTagName("*");
+			console.log(all);
+			for (let i = 0; i < all.length; i++) {
+				const element = all[i]
+				element.addEventListener("mouseover", function (e) {
+					e.stopPropagation()
+					this.style.color = "red"
+				})
+				element.addEventListener("mouseleave", function () {
+					this.style.color = ""
+				})
+			}
+
+		</script>
+	  </body>
+	</html>
