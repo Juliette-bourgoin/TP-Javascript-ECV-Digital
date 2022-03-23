@@ -1,34 +1,32 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>EXO 4 | TP 1 - JS - Juliette Bourgoin</title>
-</head>
-<body>
+	<head>
+	<meta charset="utf-8">
+	<title>EXO 4 | TP 1 - JS - Juliette Bourgoin</title>
+	</head>
+	<body>
+		<h1>Hello</h1>
+		<h2>Titre 1</h2>
+		<p>Nulla malesuada lorem eu risus porta, ut blandit libero pulvinar. Nam iaculis urna et ipsum egestas vehicula. Quisque a leo lectus. Suspendisse gravida eget mi commodo hendrerit. Suspendisse feugiat egestas facilisis. Integer sed consectetur magna. Ut pellentesque malesuada mi, non feugiat ipsum volutpat a. Nunc pulvinar porttitor orci non suscipit. Proin non odio dapibus, accumsan sapien id, placerat turpis. Aliquam rhoncus eros a neque ullamcorper semper. Quisque congue maximus purus, in fermentum risus. Donec ligula enim, placerat a turpis et, dictum vehicula eros. Praesent interdum urna in dui blandit, nec venenatis leo molestie. Vivamus efficitur augue quis porta ultricies.</p>
 
-	<h1>Hello</h1>
-	<h2>Titre 1</h2>
-	<p>Nulla malesuada lorem eu risus porta, ut blandit libero pulvinar. Nam iaculis urna et ipsum egestas vehicula. Quisque a leo lectus. Suspendisse gravida eget mi commodo hendrerit. Suspendisse feugiat egestas facilisis. Integer sed consectetur magna. Ut pellentesque malesuada mi, non feugiat ipsum volutpat a. Nunc pulvinar porttitor orci non suscipit. Proin non odio dapibus, accumsan sapien id, placerat turpis. Aliquam rhoncus eros a neque ullamcorper semper. Quisque congue maximus purus, in fermentum risus. Donec ligula enim, placerat a turpis et, dictum vehicula eros. Praesent interdum urna in dui blandit, nec venenatis leo molestie. Vivamus efficitur augue quis porta ultricies.</p>
+	<script>
 
-<script>
+		const mydiv = document.createElement("div");
 
-	const mydiv = document.createElement("div");
+		mydiv.style.backgroundColor = "purple";
+		mydiv.style.width = "100%";
+		mydiv.style.height = "300px";
 
-	mydiv.style.backgroundColor = "purple";
-	mydiv.style.width = "100%";
-	mydiv.style.height = "300px";
+		document.getElementsByTagName('body')[0].appendChild(mydiv);
 
-	document.getElementsByTagName('body')[0].appendChild(mydiv);
+		const mytext = document.createElement("h1");
 
-	const mytext = document.createElement("h1");
+		mytext.innerHTML = "coucou";
 
-	mytext.innerHTML = "coucou";
+		mytext.style.color = "white";
 
-	mytext.style.color = "white";
+		mydiv.appendChild(mytext);
 
-	mydiv.appendChild(mytext);
-
-</script>
-</body>
-
+	</script>
+	</body>
 </html>

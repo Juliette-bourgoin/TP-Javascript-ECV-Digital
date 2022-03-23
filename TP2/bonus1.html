@@ -414,17 +414,9 @@
 
 		</div>
 		<script>
-			const all = document.getElementsByTagName("*");
-			for (let i = 0; i < all.length; i++) {
-				const element = all[i]
-				element.addEventListener("mouseover", function (e) {
-					e.stopPropagation()
-					this.style.color = "red"
-				})
-				element.addEventListener("mouseleave", function () {
-					this.style.color = ""
-				})
-			}
+			document.addEventListener('click', function(e) {
+				e.target.remove()
+			}, false);
 		</script>
-	</body>
-</html>
+	  </body>
+	</html>
