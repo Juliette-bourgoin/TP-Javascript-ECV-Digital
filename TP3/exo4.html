@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+	<title>EXO 4 | TP 2 - JS - Juliette Bourgoin</title>
+	</head>
+	<body onkeyup="ecrire(event)">
+
+
+		<ul id="ma_ul">
+
+		</ul>
+
+
+		<script>
+
+			var comptage = 0;
+
+			function ecrire(evt) {
+
+				let lettre = (String.fromCharCode(evt.keyCode))
+				if ( comptage > 20)  {
+					document.getElementById('ma_ul').removeChild(
+    					document.getElementById('ma_ul').childNodes[0]
+					);
+				}
+				document.getElementById('ma_ul').insertAdjacentHTML("beforeend", `<li>${lettre}</li>`)
+				comptage++;
+
+			}
+
+
+
+		</script>
+	</body>
+</html>

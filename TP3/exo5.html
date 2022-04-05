@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+	<title>EXO 5 | TP 3 - JS - Juliette Bourgoin</title>
+	</head>
+	<body>
+
+		<div id="screen"></div>
+
+
+
+
+
+		<script>
+
+(function() {
+  window.onresize = displayWindowSize;
+  window.onload = displayWindowSize;
+
+  function displayWindowSize() {
+    let myWidth = window.innerWidth;
+    let myHeight = window.innerHeight;
+    // your size calculation code here
+    document.getElementById("screen").innerHTML = myWidth + "x" + myHeight;
+  };
+
+
+})();
+
+		</script>
+	</body>
+</html>

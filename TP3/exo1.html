@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	<meta charset="utf-8">
+	<title>EXO 1 | TP 3 - JS - Juliette Bourgoin</title>
+	</head>
+		<style>
+			.div {
+				background-color: black;
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+			}
+		</style>
+	<body>
+
+
+
+		<div class="div">coucou</div>
+		<div class="div"></div>
+		<div class="div"></div>
+
+		<script>
+
+			const all = document.getElementsByTagName("div");
+			for (let i = 0; i < all.length; i++) {
+				const element = all[i]
+				element.addEventListener("click", function (e) {
+					if (e.target.style.backgroundColor === "red") {
+						e.target.style.backgroundColor = "black"
+					} else {
+						e.target.style.backgroundColor = "red"
+					}
+				})
+			}
+
+		</script>
+	</body>
+</html>
