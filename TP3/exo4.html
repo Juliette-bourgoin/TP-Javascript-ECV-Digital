@@ -16,7 +16,7 @@
 			let comptage = 0;
 
 			function ecrire(evt) {
-				let lettre = (String.fromCharCode(evt.keyCode))
+				const lettre = (String.fromCharCode(evt.keyCode))
 				if ( comptage > 20)  {
 					document.getElementById('ma_ul').removeChild(
     					document.getElementById('ma_ul').childNodes[0]

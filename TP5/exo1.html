@@ -11,6 +11,12 @@
 
 	<script>
 
+		let phrase = "How the Avocado Became the Fruitof the Global Trade";
+
+		const getHashTags = (str) => str.split(' ').sort((a, b) => b.length - a.length).slice(0, 3).map((element) => '#' + element);
+
+		document.write(getHashTags(phrase));
+
 	</script>
 </body>
 </html>

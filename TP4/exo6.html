@@ -13,14 +13,14 @@
 
 			function findLongestWord(str) {
 				const array = str.match(/\w[a-z]{0,}/gi);
-				let resultat = array[0];
+				let result = array[0];
 
 				for(let x = 1 ; x < array.length ; x++) {
-					if(resultat.length < array[x].length) {
-					resultat = array[x];
+					if(result.length < array[x].length) {
+					result = array[x];
 					}
 				}
-				return resultat;
+				return result;
 			}
 
 			document.write(findLongestWord('Le chemin le plus cours n\'est pas toujours le meilleur'));
