@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EXO 5 | TP 5 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Consigne :</h1>
+	<p>Créez une fonction combinations qui prend un nombre variable d'arguments, chaque argument représentant le nombre d'articles dans un groupe, et qui renvoie le nombre de permutations (combinaisons) d'articles que vous pourriez obtenir en prenant un article de chaque groupe.</p>
+
+	<script>
+
+		const combinations = (...args) => args.reduce((a, b) => a * b);
+
+		combinations(2,3);
+
+		document.write(combinations(2, 3));
+		document.write("<br>");
+		document.write(combinations(3, 7, 4));
+		document.write("<br>");
+		document.write(combinations(2, 3, 4, 5));
+
+	</script>
+
+</body>
+</html>

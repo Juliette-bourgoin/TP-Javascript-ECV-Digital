@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EXO 2 | TP 5 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Consigne :</h1>
+	<p>Créer une fonction qui supprime les valeurs dupliquées dans un tableau (Number, String)</p>
+
+<script>
+
+	const arr = [1,"apple", "mango", "apple", 1, 56, 57, 57,"orange", "mango", "mango"];
+
+	const removeDuplicates = (a) => [...new Set(a)]
+
+	document.write(removeDuplicates(arr));
+
+</script>
+</body>
+</html>

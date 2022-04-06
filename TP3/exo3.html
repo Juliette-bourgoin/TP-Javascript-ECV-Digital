@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="fr">
-
 <head>
 	<meta charset="utf-8">
 	<title>EXO 3 | TP 3 - JS - Juliette Bourgoin</title>
 	<style>
-		.el {
+		.rectangle {
 			width: 100%;
 			height: 50px;
 			margin: 10px;
@@ -16,18 +15,18 @@
 
 <body>
 
+	<h1>Consigne :</h1>
+	<p>Copier l’exercice précédent. Au clic d’une des div, changer la couleur de fond en rouge. Lorsque une div rouge est de nouveau cliquée, elle récupère sa couleur d’origine</p>
+
 	<script>
 
-		// RANDOM
 		const random = Math.round(Math.random() * 10) + 5
 
 		for (let i = 0; i < random; i++) {
 			const color = "#" + Math.floor(Math.random()*16777215).toString(16);
-			document.body.insertAdjacentHTML("beforeend", `<div class="el" onclick="this.style.backgroundColor=='red'?this.style.backgroundColor='${color}':this.style.backgroundColor='red'" style="background-color: ${color};">${i}</div>`)
-
+			document.body.insertAdjacentHTML("beforeend", `<div class="rectangle" onclick="this.style.backgroundColor=='red'?this.style.backgroundColor='${color}':this.style.backgroundColor='red'" style="background-color: ${color};">${i}</div>`)
 		}
 
 	</script>
 </body>
-
 </html>

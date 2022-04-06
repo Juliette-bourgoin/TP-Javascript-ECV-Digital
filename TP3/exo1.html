@@ -5,7 +5,7 @@
 	<title>EXO 1 | TP 3 - JS - Juliette Bourgoin</title>
 	</head>
 		<style>
-			.div {
+			.carre {
 				background-color: black;
 				width: 100px;
 				height: 100px;
@@ -14,17 +14,20 @@
 		</style>
 	<body>
 
+		<h1>Consigne :</h1>
+		<p>Créer une page HTML avec 3 div carrés ayant un fond noir. Au clic sur une div, elle prend la couleur rouge. Si vous recliquez dessus, elle redevient noir. </p>
 
-
-		<div class="div">coucou</div>
-		<div class="div"></div>
-		<div class="div"></div>
+		<section style="display: flex; flex-direction: row;">
+			<div class="carre"></div>
+			<div class="carre"></div>
+			<div class="carre"></div>
+		</section>
 
 		<script>
 
-			const all = document.getElementsByTagName("div");
-			for (let i = 0; i < all.length; i++) {
-				const element = all[i]
+			const carres = document.getElementsByTagName("div");
+			for (let i = 0; i < carres.length; i++) {
+				const element = carres[i]
 				element.addEventListener("click", function (e) {
 					if (e.target.style.backgroundColor === "red") {
 						e.target.style.backgroundColor = "black"

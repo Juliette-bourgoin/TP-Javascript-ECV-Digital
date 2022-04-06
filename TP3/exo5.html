@@ -6,27 +6,25 @@
 	</head>
 	<body>
 
-		<div id="screen"></div>
+		<h1>Consigne :</h1>
+		<p>Créer une page HTML qui affiche la taille de la fenêtre dynamiquement. Lorsque vous redimensionner la page, la largeur et la hauteur en pixel sont affichés.</p>
 
-
-
-
+		<section>
+			<p id="my-screen"></p>
+		</section>
 
 		<script>
 
-(function() {
-  window.onresize = displayWindowSize;
-  window.onload = displayWindowSize;
+			(function() {
+			window.onresize = windowSize;
+			window.onload = windowSize;
 
-  function displayWindowSize() {
-    let myWidth = window.innerWidth;
-    let myHeight = window.innerHeight;
-    // your size calculation code here
-    document.getElementById("screen").innerHTML = myWidth + "x" + myHeight;
-  };
-
-
-})();
+				function windowSize() {
+					let myWidth = window.innerWidth;
+					let myHeight = window.innerHeight;
+					document.getElementById("my-screen").innerHTML = myWidth + "x" + myHeight;
+				};
+			})();
 
 		</script>
 	</body>
