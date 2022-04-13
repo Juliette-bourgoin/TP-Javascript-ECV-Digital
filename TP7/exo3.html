@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EXO 3 | TP 7 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Consigne :</h1>
+	<p>Créez une fonction qui prend en paramètre une date de naissance d’une personne au format DD/MM/YYYY. Si la personne est mineure, la promesse échoue, sinon elle renvoie true</p>
+
+	<script>
+		function getAge(dateString) {
+			let annee = dateString.substr(-4, 4);
+			let mois = dateString.split("/")[1];
+			let jourNaissance = dateString.split("/")[0];
+			var today = new Date();
+			var naissance = new Date(annee, mois-1, jourNaissance);
+			var age = today.getFullYear() - naissance.getFullYear();
+			var m = today.getMonth() - naissance.getMonth();
+			if (m < 0 || (m === 0 && today.getDate() < naissance.getDate())) {
+				age--;
+			}
+			return age;
+		}
+
+		function ageRequis (dateString) {
+			return new Promise((mineurCall, majeurCall) => {
+				age = getAge(dateString);
+				if ( age > 18 ) {
+					majeurCall("true");
+				} else {
+					mineurCall("false");
+				}
+			})
+		}
+
+		function majeurCallBack() {
+			document.write("True, la promesse a réussie")
+		}
+
+		function mineurCallBack() {
+			document.write("La promesse a échouée")
+		}
+
+		const promise = ageRequis("27/05/2000");
+		promise.then(mineurCallBack, majeurCallBack);
+	</script>
+</body>
+</html>

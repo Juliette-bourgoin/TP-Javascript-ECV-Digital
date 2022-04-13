@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EXO 5 | TP 7 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Consigne :</h1>
+	<p>Exécutez toutes les fonctions créées ci-dessus avec des then & catch</p>
+
+	<script>
+
+		async function executeFirst() {
+			try {
+				const firstPromise = await checkCaractere("fefe");
+				document.write(firstPromise);
+			} catch (e) {
+				document.write(e);
+			}
+		};
+
+		async function executeSecond() {
+			try {
+				const secondPromise = await operationSuperieur(27, 4);
+				document.write(secondPromise);
+			} catch (e) {
+				document.write(e);
+			}
+		};
+
+		async function executeThird() {
+			try {
+				const thirdPromise = await ageRequis("27/05/2018");
+				document.write(thirdPromise);
+			} catch (e) {
+				document.write(e);
+			}
+		};
+
+
+		// Première fonction : chaîne de caractères
+
+		function checkCaractere (text) {
+			return new Promise((resolve, failure) => {
+				if (text.length > 20) {
+					failure("La chaine fait plus de 20 caractères : échec"+"<br>");
+				} else {
+					resolve ("La chaine fait moins de 20 caractères : réussite"+"<br>");
+				}
+			})
+		}
+
+		// Deuxième fonction : variable supérieure à la seconde
+
+		function operationSuperieur (a, b) {
+			return new Promise((resolve, failure) => {
+				if ( a > b) {
+					resolve( a - b + "<br>");
+				} else {
+					failure("true"+"<br>");
+				}
+			})
+		}
+
+		// Troisième fonction : date de naissance
+
+		function getAge(dateString) {
+			let annee = dateString.substr(-4, 4);
+			let mois = dateString.split("/")[1];
+			let jourNaissance = dateString.split("/")[0];
+			var today = new Date();
+			var naissance = new Date(annee, mois-1, jourNaissance);
+			var age = today.getFullYear() - naissance.getFullYear();
+			var m = today.getMonth() - naissance.getMonth();
+			if (m < 0 || (m === 0 && today.getDate() < naissance.getDate())) {
+				age--;
+			}
+			return age;
+		}
+
+		function ageRequis (dateString) {
+			return new Promise((resolve, failure) => {
+				age = getAge(dateString);
+				if ( age > 18 ) {
+					resolve("true"+"<br>");
+				} else {
+					failure("false"+"<br>");
+				}
+			})
+		}
+
+		executeFirst();
+		executeSecond();
+		executeThird();
+
+	</script>
+</body>
+</html>

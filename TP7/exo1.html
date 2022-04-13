@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EXO 1 | TP 7 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Consigne :</h1>
+	<p>Créez une fonction qui prend en paramètre une chaîne de caractère, si la chaîne de caractère fait plus de 20 caractères, la promesse échoue, sinon la fonction renvoie true</p>
+
+	<script>
+		function checkCaractere (text) {
+			return new Promise((successCall, failureCall) => {
+				if (text.length > 20) {
+					failureCall("false");
+				} else {
+					successCall("true");
+				}
+			})
+		}
+
+		function failureCallBack() {
+			document.write("La chaine fait plus de 20 caractères : échec")
+		}
+
+		function successCallBack() {
+			document.write("La chaine fait moins de 20 caractères : réussite")
+		}
+
+		const promise = checkCaractere("Je suis là");
+		promise.then(successCallBack, failureCallBack);
+	</script>
+</body>
+</html>

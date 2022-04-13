@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EXO 2 | TP 6 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Consigne :</h1>
+	<p>Créer une méthode merge qui prend en paramètres des objets et les fusionnent.</p>
+
+	<script>
+		object = {
+			a: [{ x: 2}, { y: 4}],
+			b: 1
+		};
+		other = {
+			a: { z: 3},
+			b: [ 2, 3 ],
+			c: "foo"
+		};
+
+		function merge(value1, value2) {
+			for (var p in value2) {
+				try {
+					if ( value2[p].constructor==Object ) {
+					value1[p] = merge(value1[p], value2[p]);
+					} else {
+						value1[p] = value2[p];
+					}
+				} catch(e) {
+					value1[p] = value2[p];
+				}
+			}
+			return value1;
+		}
+
+		console.log(merge(object, other));
+	</script>
+</body>
+</html>

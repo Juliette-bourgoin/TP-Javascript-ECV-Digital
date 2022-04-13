@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EXO 2 | TP 7 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Consigne :</h1>
+	<p>Créez une fonction qui prend en paramètre deux int, si la première variable est supérieure à la seconde, la promesse renvoie la différence entre les deux variables, sinon elle échoue.</p>
+
+	<script>
+		function operationSuperieur (a, b) {
+			return new Promise((operationCall, failureCall) => {
+				if ( a > b) {
+					operationCall( a - b );
+				} else {
+					failureCall("true");
+				}
+			})
+		}
+
+		function failureCallBack() {
+			document.write("La promesse a échouée")
+		}
+
+		function operationCallBack(diff) {
+			document.write(diff);
+		}
+
+		const promise = operationSuperieur(15, 10);
+		promise.then(operationCallBack, failureCallBack);
+	</script>
+</body>
+</html>

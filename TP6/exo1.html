@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EXO 1 | TP 6 - JS - Juliette Bourgoin</title>
+</head>
+<body>
+
+	<h1>Consigne :</h1>
+	<p>Le code fiscal</p>
+
+	<script>
+		let personne = {name: "Mickey",	surname: "Mouse", gender: "M", dob: "16/1/1928"};
+		let conversion = {1: "A", 2 : "B", 3 : "C", 4 : "D", 5 : "E",  6: "H", 7 : "L", 8 : "M", 9 : "P", 10 : "R", 11 : "S", 12 : "T"};
+		const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+		function voyelles(text) {
+			let tableauVoyelles = text.toLowerCase().split("").filter(letter => vowels.includes(letter))
+			return tableauVoyelles;
+		}
+
+		function consonnes(text) {
+			let tableauConsonnes = text.toLowerCase().split("").filter(letter => !vowels.includes(letter))
+			return tableauConsonnes;
+		}
+
+		function fiscalCode(personne) {
+			// Nom de famille
+			let consonnesNom = consonnes(personne.name);
+			let codeNomDeFamille = "";
+			if ( consonnesNom.length > 3) {
+				codeNomDeFamille = consonnesNom.slice(0, 3).join("");
+			} else {
+				let voyellesNom = voyelles(personne.name);
+				codeNomDeFamille = consonnesNom.concat(voyellesNom)
+				if (codeNomDeFamille.length < 3) {
+					codeNomDeFamille = codeNomDeFamille.concat(["X", "X", "X"]);
+				}
+				codeNomDeFamille = codeNomDeFamille.slice(0, 3).join("");
+			}
+			codeNomDeFamille = codeNomDeFamille.toUpperCase();
+
+			// Prénom
+			let consonnesPrenom = consonnes(personne.surname);
+			let codePrenom = "";
+			if ( consonnesPrenom.length == 3){
+				codePrenom = consonnesPrenom.slice(0, 3).join("");
+			} else if ( consonnesPrenom.length > 3) {
+				codePrenom = consonnesPrenom[0]+consonnesPrenom[2]+consonnesPrenom[3];
+			} else {
+				let voyellesPrenom = voyelles(personne.surname)
+				codePrenom = consonnesPrenom.concat(voyellesPrenom)
+				if (codePrenom.length < 3) {
+					codePrenom = codePrenom.concat(["X", "X", "X"]);
+				}
+				console.log(codePrenom);
+				codePrenom = codePrenom.slice(0, 3).join("");
+			}
+			codePrenom = codePrenom.toUpperCase();
+
+			// Date de naissance
+			let dateNaissance = personne.dob;
+			let nombreAnnee = dateNaissance.substr(-2, 2);
+			let mois = personne.dob.split("/")[1];
+			let lettreMois = conversion[mois];
+			let jourNaissance = personne.dob.split("/")[0];
+
+			// Genre
+			let genre = personne.gender;
+			if ( genre == "M" ) {
+				if (jourNaissance.length < 2) {
+					jourNaissance = "0"+jourNaissance;
+				}
+			} else {
+				jourNaissance = 40+parseInt(jourNaissance);
+			}
+
+			// Retour
+			return codeNomDeFamille+codePrenom+nombreAnnee+lettreMois+jourNaissance;
+		}
+
+		document.write(fiscalCode(personne));
+	</script>
+</body>
+</html>
